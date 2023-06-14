@@ -39,6 +39,11 @@
     font-size: 1em;
     width: 100%;
     max-width: 300px;
+    transition: all 400ms ease;
+}
+.login__button:hover{
+    transition: all 400ms ease;
+    background-color: #ff9e97;
 }
 .login__button:disabled{
     background-color: #eee;

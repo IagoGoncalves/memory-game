@@ -1,6 +1,8 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
+const congrats = document.querySelector('.congrats');
+const message = document.querySelector('.message');
 
 const characters = [
     'beth',
@@ -28,7 +30,8 @@ const checkEndeGame = () =>{
     const disabledCards = document.querySelectorAll('.disabled-card');
     if(disabledCards.length === characters.length * 2){
         clearInterval(this.loop);
-        alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML} segundos`);
+        congrats.style.scale = 1;
+        message.innerHTML = `Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML} segundos`;
     }
 }
 
@@ -111,3 +114,6 @@ window.onload = () =>{
     loadGame();
 }
 
+const reset = () =>{
+    window.location.reload(true);
+}
