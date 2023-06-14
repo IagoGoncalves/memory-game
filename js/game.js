@@ -15,6 +15,16 @@ const characters = [
     'summer',
     'meeseeks',
     'scroopy',
+    'Annie',
+    'Calypso',
+    'Chris',
+    'Collector',
+    'Diane',
+    'EvilMorty',
+    'Glenn',
+    'Keara',
+    'Nebulon',
+    'Stacy'
 ];
 
 const createElement = (tag, className) => {
